@@ -3,7 +3,7 @@ id: jwk-json-leak
 info:
   name: JSON Web Key File - Exposure
   author: Mohsen Yaghoubi
-  severity: low
+  severity: info
   description: |
     Searches for JSON Web Key (JWK) file.
   reference:
@@ -45,4 +45,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4a0a0047304502206c6a3e68fd8e41fb2382b1409a7f11a11f81f36fe466bfda48addadd48c1f003022100cdaaf250341a71babf8b7b0e1888acc58e494d57c53d42d53627224911e7d5e4:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100c39f27132fcc555458cd872a6542102019a4d1aac3830ac04e212a5ae5e9bd1202207634f3d60999272ed04787031f3e9d9986c4bb16ddd48e1203e6361c6f8f22a6:922c64590222798bb761d5b6d8e72950

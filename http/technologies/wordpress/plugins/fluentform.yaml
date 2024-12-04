@@ -1,7 +1,7 @@
 id: wordpress-fluentform
 
 info:
-  name: Contact Form Plugin by Fluent Forms for Quiz, Survey, and Drag & Drop WP Form Builder Detection
+  name: Fluent Forms – Customizable Contact Forms, Survey, Quiz, & Conversational Form Builder Detection
   author: ricardomaia
   severity: info
   reference:
@@ -46,3 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
+# digest: 4a0a00473045022100e7cfdd4a99f320e46f7011b96adb4af1db3c6d141bc37eacd0c960141dc5764a022059841a9675602f66bf9b932d2d270fad0ad24fbef441763c93780692dcd0f78d:922c64590222798bb761d5b6d8e72950

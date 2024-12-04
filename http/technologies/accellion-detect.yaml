@@ -1,0 +1,32 @@
+id: accellion-detect
+
+info:
+  name: Accellion - Detect
+  author: rxerium
+  severity: info
+  description: |
+    Dectection of Accellion File Transfer Appliance.
+  metadata:
+    verified: true
+    max-request: 1
+    shodan-query: html:"/cfadmin/img/"
+  tags: accellion,tech,detect
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/cfadmin/"
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - '/cfadmin/img/accellion-logo.png'
+          - 'secured by accellion'
+        condition: or
+
+      - type: status
+        status:
+          - 200
+# digest: 4a0a004730450220765c7750d086859eb81fc5c4776b308bb72521ed85eb24724b4fcae86ce4165c022100eced5639c74d963e4fcd494aac95312d64c5507ec2dd1051809e9b3ff06a1f77:922c64590222798bb761d5b6d8e72950
